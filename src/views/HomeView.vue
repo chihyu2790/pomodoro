@@ -26,7 +26,7 @@ const settings = useSettingsStore()
 const { selectedAlarmFile } = storeToRefs(settings)
 
 const currentText = computed(() => {
-  return current.value.length > 0 ? current.value : items.value.length > 0 ? '點擊開始' : '沒有事項'
+  return current.value.length > 0 ? current.value : items.value.length > 0 ? '點擊開啟' : '沒有事項'
 })
 const timeText = computed(() => {
   console.log(typeof (timeleft))
